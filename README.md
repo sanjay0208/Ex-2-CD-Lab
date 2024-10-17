@@ -36,13 +36,19 @@
 
 Developed By : SANJAY M
 Register number : 212222110038
+
 #include <stdio.h>
+
 #include <ctype.h>
+
 #include <string.h>
+
 int isKeyword(char buffer[]) 
 {
     char keywords[5][10] = {"if", "else", "while", "for", "int"};
-    for (int i = 0; i < 5; ++i) {
+    
+    for (int i = 0; i < 5; ++i) 
+    {
         if (strcmp(buffer, keywords[i]) == 0)
         {
             return 1;

@@ -33,16 +33,11 @@
 
 # INPUT
 ~
-
 Developed By : SANJAY M
 Register number : 212222110038
-
 #include <stdio.h>
-
 #include <ctype.h>
-
 #include <string.h>
-
 int isKeyword(char buffer[]) 
 {
     char keywords[5][10] = {"if", "else", "while", "for", "int"};
@@ -61,9 +56,7 @@ int main() {
     char ch, buffer[15];
     char operators[] = "+-*/=";
     int i = 0;
-
     printf("Enter your input: ");
-    
     while ((ch = getchar()) != EOF)
     {
         if (strchr(operators, ch))
